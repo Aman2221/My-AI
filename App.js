@@ -6,12 +6,18 @@ import Walkthrough from "./components/Walkthrough/index.jsx";
 import WalkthroughScreen2 from "./components/Walkthrough/WalkthroughScreen2.jsx";
 import WalkthroughScreen3 from "./components/Walkthrough/WalkthroughScreen3.jsx";
 import SignUpPage from "./components/AuthPages/Signup.jsx";
+import WelcomePage from "./components/Welcome/index.jsx";
+import SearchConnection from "./components/SearchCon/index.jsx";
+import HomePage from "./components/HomePage/index.jsx";
 export default function App() {
   return (
     <View style={styles.container}>
       {/*<LogoPage />
-      <WalkthroughScreen3 />*/}
+      <WalkthroughScreen3 />
       <SignUpPage />
+      <WelcomePage />
+      <SearchConnection />*/}
+      <HomePage />
     </View>
   );
 }

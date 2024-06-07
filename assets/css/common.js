@@ -8,5 +8,7 @@ export default StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     fontFamily: "Poppins-Regular",
+    paddingLeft: 20,
+    paddingRight: 20,
   },
 });

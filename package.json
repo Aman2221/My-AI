@@ -18,7 +18,9 @@
     "react-dom": "18.2.0",
     "react-native": "0.74.1",
     "react-native-web": "~0.19.10",
-    "twrnc": "^4.2.0"
+    "twrnc": "^4.2.0",
+    "typescript": "~5.3.3",
+    "@types/react": "~18.2.79"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
