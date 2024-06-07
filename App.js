@@ -12,12 +12,14 @@ import HomePage from "./components/HomePage/index.jsx";
 export default function App() {
   return (
     <View style={styles.container}>
-      {/*<LogoPage />
+      {/*
       <WalkthroughScreen3 />
       <SignUpPage />
+      
+      <SearchConnection />
       <WelcomePage />
-      <SearchConnection />*/}
-      <HomePage />
+      <HomePage />*/}
+      <LogoPage />
     </View>
   );
 }
