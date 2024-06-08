@@ -11,6 +11,13 @@ import SearchConnection from "./components/SearchCon/index.jsx";
 import HomePage from "./components/HomePage/index.jsx";
 import Chat from "./components/Chat/index.jsx";
 import SearchResult from "./components/SearchResult/index.jsx";
+import SideBar from "./components/SideBar/index.jsx";
+import LinkedAccounts from "./components/LinkedAccount/index.jsx";
+import ChooseTheme from "./components/Theme/index.jsx";
+import SelectLang from "./components/SelectLang/index.jsx";
+import Privacy from "./components/Privacy/index.jsx";
+import Feedback from "./components/Feedback/index.jsx";
+import About from "./components/About/index.jsx";
 export default function App() {
   return (
     <View style={styles.container}>
@@ -23,8 +30,20 @@ export default function App() {
        <LogoPage />
        <HomePage />
        <Chat />
+       <SearchResult />
+       <SideBar />
+
+      <LinkedAccounts />
+
+      <ChooseTheme />
+
+      <SelectLang />
+      <Privacy />
+      
+      <About />
       */}
-      <SearchResult />
+
+      <Feedback />
     </View>
   );
 }
