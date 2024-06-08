@@ -18,8 +18,9 @@ export default function App() {
       
       <SearchConnection />
       <WelcomePage />
-      <HomePage />*/}
-      <LogoPage />
+       <LogoPage />
+      */}
+      <HomePage />
     </View>
   );
 }

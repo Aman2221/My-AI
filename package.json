@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@expo/metro-runtime": "~3.2.1",
+    "@types/react": "~18.2.79",
     "babel-plugin-macros": "^3.1.0",
     "expo": "~51.0.10",
     "expo-status-bar": "~1.12.1",
@@ -17,10 +18,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.74.1",
+    "react-native-vector-icons": "^10.1.0",
     "react-native-web": "~0.19.10",
     "twrnc": "^4.2.0",
-    "typescript": "~5.3.3",
-    "@types/react": "~18.2.79"
+    "typescript": "~5.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
