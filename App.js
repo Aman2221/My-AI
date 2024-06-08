@@ -9,6 +9,8 @@ import SignUpPage from "./components/AuthPages/Signup.jsx";
 import WelcomePage from "./components/Welcome/index.jsx";
 import SearchConnection from "./components/SearchCon/index.jsx";
 import HomePage from "./components/HomePage/index.jsx";
+import Chat from "./components/Chat/index.jsx";
+import SearchResult from "./components/SearchResult/index.jsx";
 export default function App() {
   return (
     <View style={styles.container}>
@@ -19,8 +21,10 @@ export default function App() {
       <SearchConnection />
       <WelcomePage />
        <LogoPage />
+       <HomePage />
+       <Chat />
       */}
-      <HomePage />
+      <SearchResult />
     </View>
   );
 }

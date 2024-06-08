@@ -1,10 +1,12 @@
 import React from "react";
 import { View, Image } from "react-native";
 import tw from "twrnc";
+import SearchCategory from "../Category";
 
 const AskInput = () => {
   return (
     <View style={tw`w-full fixed bottom-0`}>
+      <SearchCategory />
       <div style={tw`flex items-center w-full border `}>
         <div
           style={tw`flex items-center justify-center bg-blue-800 rounded-full h-10 w-14`}

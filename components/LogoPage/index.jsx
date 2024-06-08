@@ -1,7 +1,6 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { Text, View, Image } from "react-native";
-import styles from "../../assets/css/common";
 import tw from "twrnc";
 
 const LogoPage = () => {
