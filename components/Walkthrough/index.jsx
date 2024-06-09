@@ -2,7 +2,7 @@ import React from "react";
 import { Text, Image } from "react-native";
 import tw from "twrnc";
 
-const Walkthrough = () => {
+const Walkthrough = ({ navigation }) => {
   return (
     <div style={tw`flex items-center justify-center flex-col w-full`}>
       <Image source={require("../../assets/img/walk.png")} />
@@ -15,6 +15,7 @@ const Walkthrough = () => {
         since the 1500s,
       </Text>
       <button
+        onClick={() => navigation.navigate("Walkthrough2")}
         style={tw`bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded mt-4`}
       >
         Next
