@@ -2,7 +2,7 @@ import React from "react";
 import { Text, Image } from "react-native";
 import tw from "twrnc";
 
-const SignUpPage = () => {
+const SignUpPage = ({ navigation }) => {
   return (
     <div style={tw`flex items-center justify-center flex-col w-full`}>
       <Image source={require("../../assets/img/logo.png")} />
@@ -17,12 +17,18 @@ const SignUpPage = () => {
         required
       />
       <button
-        style={tw`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 rounded outline-none border-none w-full mt-3`}
+        style={tw`bg-blue-500 border-0 hover:bg-blue-700 text-white font-bold py-2 rounded outline-none border-none w-full mt-3`}
       >
-        Button
+        Continue
       </button>
       <Text style={tw`text-center mt-3`}>
-        Didn’t have an account ? Sign up{" "}
+        Didn’t have an account ?
+        <Text
+          style={tw`text-center mt-3 text-blue-500`}
+          onClick={() => navigation.navigate("Account")}
+        >
+          &nbsp;Sign up
+        </Text>
       </Text>
       <div style={tw`my-3 flex items-center`}>
         <p style={tw`mb-0 text-center font-semibold`}>OR</p>

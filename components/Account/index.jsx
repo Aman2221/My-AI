@@ -2,7 +2,7 @@ import React from "react";
 import { Text, Image } from "react-native";
 import tw from "twrnc";
 
-const Account = () => {
+const Account = ({ navigation }) => {
   return (
     <div style={tw`flex items-center justify-center flex-col w-full`}>
       <Image source={require("../../assets/img/logo.png")} />
@@ -24,7 +24,15 @@ const Account = () => {
       >
         Continue
       </button>
-      <Text style={tw`text-center mt-3`}>Already have an account ? Log in</Text>
+      <Text style={tw`text-center mt-3`}>
+        Already have an account ?
+        <Text
+          style={tw`text-center mt-3 text-blue-500`}
+          onClick={() => navigation.navigate("SignUp")}
+        >
+          &nbsp;Log in
+        </Text>
+      </Text>
       <div style={tw`my-3 flex items-center`}>
         <p style={tw`mb-0 text-center font-semibold`}>OR</p>
       </div>

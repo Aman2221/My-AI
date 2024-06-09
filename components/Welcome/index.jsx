@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View, Image } from "react-native";
 import tw from "twrnc";
 
-const WelcomePage = () => {
+const WelcomePage = ({ navigation }) => {
   return (
     <View style={tw`flex flex-col justify-center items-center`}>
       <Text style={tw`text-slate-800 font-bold text-2xl`}>
@@ -14,11 +14,13 @@ const WelcomePage = () => {
       </Text>
       <div style={tw`flex justify-between gap-8 w-full`}>
         <button
+          onClick={() => navigation.navigate("Account")}
           style={tw`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 rounded outline-none border-none w-full mt-3`}
         >
           Sign up
         </button>
         <button
+          onClick={() => navigation.navigate("SignUp")}
           style={tw`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 rounded outline-none border-none w-full mt-3`}
         >
           Log in
