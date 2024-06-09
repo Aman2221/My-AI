@@ -11,7 +11,6 @@ import SearchConnection from "./components/SearchCon/index.jsx";
 import HomePage from "./components/HomePage/index.jsx";
 import Chat from "./components/Chat/index.jsx";
 import SearchResult from "./components/SearchResult/index.jsx";
-import SideBar from "./components/SideBar/index.jsx";
 import LinkedAccounts from "./components/LinkedAccount/index.jsx";
 import ChooseTheme from "./components/Theme/index.jsx";
 import SelectLang from "./components/SelectLang/index.jsx";
@@ -27,24 +26,8 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <View style={styles.container}>
-      {/*
-      <WalkthroughScreen3 />
-      <SignUpPage />
-      <SearchConnection />
-      <WelcomePage />
-       <LogoPage />
-       <HomePage />
-       <Chat />
-       <SearchResult />
-       <SideBar />
-      <LinkedAccounts />
-      <ChooseTheme />
-      <SelectLang />
-      <Privacy />
-      <About />
-      */}
       <NavigationContainer style={tw`bg-white`}>
-        <Stack.Navigator initialRouteName="Walkthrough1" style={tw`bg-white`}>
+        <Stack.Navigator initialRouteName="Home" style={tw`bg-white`}>
           <Stack.Screen
             style={tw`bg-white`}
             name="logoPage"

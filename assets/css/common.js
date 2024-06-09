@@ -9,4 +9,12 @@ export default StyleSheet.create({
     paddingLeft: 20,
     paddingRight: 20,
   },
+  showSidebar: {
+    position: "absolute",
+    top: 0,
+    width: "100%",
+    height: "100vh",
+    backgroundColor: "rgba(255,255,255,1)",
+    zIndex: 1000000,
+  },
 });

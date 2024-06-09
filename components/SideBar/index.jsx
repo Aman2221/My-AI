@@ -1,8 +1,9 @@
 import React from "react";
-import { Text, Image } from "react-native";
+import { Text, Image, View } from "react-native";
 import tw from "twrnc";
+import styles from "../../assets/css/common.js";
 
-const SideBar = () => {
+const SideBar = ({ navigation }) => {
   return (
     <div style={tw`bg-white shadow-lg`}>
       <div
@@ -54,7 +55,10 @@ const SideBar = () => {
             Preferences
           </Text>
         </div>
-        <div style={tw`flex gap-4 items-center p-3`}>
+        <div
+          style={tw`flex gap-4 items-center p-3`}
+          onClick={() => navigation.navigate("Theme")}
+        >
           <Image
             style={tw`h-6 w-6`}
             source={require("../../assets/img/theme.svg")}
@@ -63,7 +67,10 @@ const SideBar = () => {
             Theme
           </Text>
         </div>
-        <div style={tw`flex gap-4 items-center p-3`}>
+        <div
+          style={tw`flex gap-4 items-center p-3`}
+          onClick={() => navigation.navigate("SelectLanguage")}
+        >
           <Image
             style={tw`h-6 w-6`}
             source={require("../../assets/img/language.svg")}
@@ -72,7 +79,10 @@ const SideBar = () => {
             Region and language
           </Text>
         </div>
-        <div style={tw`flex gap-4 items-center p-3`}>
+        <div
+          style={tw`flex gap-4 items-center p-3`}
+          onClick={() => navigation.navigate("LinkedAccounts")}
+        >
           <Image
             style={tw`h-6 w-6`}
             source={require("../../assets/img/lock.svg")}
@@ -81,7 +91,10 @@ const SideBar = () => {
             Linked Account
           </Text>
         </div>
-        <div style={tw`flex gap-4 items-center p-3`}>
+        <div
+          style={tw`flex gap-4 items-center p-3`}
+          onClick={() => navigation.navigate("Policy")}
+        >
           <Image
             style={tw`h-6 w-6`}
             source={require("../../assets/img/insurance.svg")}
@@ -98,7 +111,10 @@ const SideBar = () => {
             Advanced
           </Text>
         </div>
-        <div style={tw`flex gap-4 items-center p-3`}>
+        <div
+          style={tw`flex gap-4 items-center p-3`}
+          onClick={() => navigation.navigate("Feedback")}
+        >
           <Image
             style={tw`h-6 w-6`}
             source={require("../../assets/img/favorite.svg")}
@@ -107,7 +123,10 @@ const SideBar = () => {
             Feedback
           </Text>
         </div>
-        <div style={tw`flex gap-4 items-center p-3`}>
+        <div
+          style={tw`flex gap-4 items-center p-3`}
+          onClick={() => navigation.navigate("About")}
+        >
           <Image
             style={tw`h-6 w-6`}
             source={require("../../assets/img/info-button.svg")}
